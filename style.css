@@ -1,0 +1,97 @@
+*{
+  font-family: 'Lucida Sans';
+}
+
+div
+{   
+    font-size: 16px;     
+  }
+ 
+.menu{
+  padding: 10px;
+  justify-content: space-evenly;
+  display: flex;
+  list-style: none;   
+}
+
+h2{
+  margin: 100px;
+  padding: 10px;
+  text-align: left;
+  font-size: 22; 
+}
+
+:visited{
+  color: rgb(0, 0, 0); 
+  text-decoration: none; 
+}
+
+
+footer{
+  margin: 20px;
+  padding: 20px;
+  background-color: black;
+  color: aliceblue;
+  text-align: start;
+  justify-content: space-between;
+  justify-items: start;
+  align-items: flex-start;  
+  display: flex;
+}
+
+
+header{  
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;  
+}
+
+#contenedor_principal{
+  width:1024px;
+  height:auto;
+  position:relative;
+  margin:auto;
+  }
+  .contenedor_imagen_texto{
+  width:335px;
+  height:auto;
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+  overflow:hidden;
+  }
+  .imagen, .texto{
+  width:100%;
+  height: auto;  
+  position: relative;
+  display:inline;
+  }
+  .texto{
+  height:auto;
+  text-align:center;
+  }
+
+
+  
+@media only screen and (max-width:768px){
+.imagen, .texto, .contenedor_imagen_texto{
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  display: grid;  
+  grid-template-columns: repeat(2, 2fr);
+  text-align: left;
+  margin: 2px;
+  padding: 5px;
+}
+footer{
+  font-size: 14px;
+  margin: 2px;
+}
+header{
+  justify-content: center;
+}
+}
+
+  
